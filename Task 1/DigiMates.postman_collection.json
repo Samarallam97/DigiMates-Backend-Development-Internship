@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "cb34c9e2-dc45-4cc7-a337-d9cddd8a1a38",
+		"name": "DigiMates",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30454061"
+	},
+	"item": [
+		{
+			"name": "Task 1",
+			"item": [
+				{
+					"name": "GetYouTubeDetails_Short",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/youtube?id=LcL_op0eBKs&type=short",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"youtube"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "LcL_op0eBKs"
+								},
+								{
+									"key": "type",
+									"value": "short"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetYouTubeDetails_Video",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/youtube?id=7kf1SACqlRw&type=video",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"youtube"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7kf1SACqlRw"
+								},
+								{
+									"key": "type",
+									"value": "video"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetYouTubeDetails_Playlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/youtube?id=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4&type=playlist",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"youtube"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4"
+								},
+								{
+									"key": "type",
+									"value": "playlist"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7276",
+			"type": "string"
+		}
+	]
+}
